@@ -1,0 +1,103 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-forest: #092117;
+    --color-dark: #050d09;
+    --color-gold: #D8B56D;
+    --color-gold-light: #F1D99B;
+    --color-ivory: #F5F0E5;
+  }
+
+  body {
+    background-color: #050d09;
+    color: #F5F0E5;
+    font-family: 'Montserrat', system-ui, -apple-system, sans-serif;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, .font-serif-luxury {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    letter-spacing: 0.02em;
+  }
+
+  .font-brand {
+    font-family: 'Cinzel', 'Cormorant Garamond', serif;
+    letter-spacing: 0.2em;
+  }
+}
+
+/* Custom scrollbars for luxury aesthetic */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #050d09;
+}
+::-webkit-scrollbar-thumb {
+  background: #1a3c2c;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #D8B56D;
+}
+
+/* Luxury gold text and borders */
+.gold-gradient-text {
+  background: linear-gradient(135deg, #F1D99B 0%, #D8B56D 50%, #B89347 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-border {
+  border-color: rgba(216, 181, 109, 0.3);
+}
+
+.gold-border-glow {
+  border-color: rgba(216, 181, 109, 0.6);
+  box-shadow: 0 0 15px rgba(216, 181, 109, 0.15);
+}
+
+.gold-button {
+  background: linear-gradient(135deg, #D8B56D 0%, #B89347 100%);
+  color: #050d09;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.gold-button:hover {
+  background: linear-gradient(135deg, #F1D99B 0%, #D8B56D 100%);
+  box-shadow: 0 4px 20px rgba(216, 181, 109, 0.3);
+  transform: translateY(-1px);
+}
+
+.gold-button-outline {
+  border: 1px solid #D8B56D;
+  color: #D8B56D;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.gold-button-outline:hover {
+  background: rgba(216, 181, 109, 0.12);
+  color: #F1D99B;
+  border-color: #F1D99B;
+}
+
+.glass-panel {
+  background: rgba(9, 33, 23, 0.65);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(216, 181, 109, 0.18);
+}
+
+.glass-panel-dark {
+  background: rgba(5, 13, 9, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(216, 181, 109, 0.12);
+}

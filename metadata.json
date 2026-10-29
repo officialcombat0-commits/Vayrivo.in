@@ -1,0 +1,8 @@
+{
+  "name": "VAYRIVO Luxury Perfumes",
+  "description": "Luxury Haute Parfumerie e-commerce store and admin management system — Your Scent. Your Signature.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
